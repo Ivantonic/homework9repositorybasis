@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ /*   background-color:#333;*/
+    border: 10px solid #333;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.container {
+    width:100%;
+    height:100%;
+}
+
+.about {
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    background-color:#f9f9f9;
+    width:50%;
+    height:49vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.about:hover, .service:hover, .blog:hover, .works:hover {
+    /*background-color:#00e1b6;*/
+    background-color:#22f3d8;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-text {
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-text:hover {
+    cursor: pointer;
+    color:#22f3d8;
+    transition: all 0.5s ease-in-out;
+}
+
+.service {
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    background-color:#ebebeb;
+    width:50%;
+    height:49vh;
+    float:right;
+    transition: all 0.5s ease-in-out;
+}
+
+.works {
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    background-color:#ebebeb;
+    width:50%;
+    height:49vh;
+    margin-top:-5px;
+    float:left;
+    transition: all 0.5s ease-in-out;
+}
+
+.blog {
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    background-color:#dadada;
+    width:50%;
+    height:49vh;
+    margin-top:-5px;
+    float:right;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact {
+    position:relative;
+    width: 110px;
+    height: 60px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    background: #333;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -55px;
+    color:white;
+}
+
+img {
+    width:100%;
+    height:auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about-img {
+    position: absolute;
+    top:0;
+}
+
+.service-img {
+    position: absolute;
+    bottom:0;
+}
+
+.works-img {
+    transform:translateY(-20px);
+}
+
+.blog-img {
+    transform:translateY(-20px);
+}
+
+.logo-image {
+    position:absolute;
+    background: #00e1b6;
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    left:50%;
+    top:50%;
+    transform:translate(-70px, -60px);
+}
+
+.clearfix {
+    clear:both;
+}
